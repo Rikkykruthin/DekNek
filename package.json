@@ -1,0 +1,29 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "A modern full-stack task management application",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "dev": "echo 'Run backend and frontend separately' && echo 'Backend: cd backend && npm run dev' && echo 'Frontend: cd frontend && npm run dev'",
+    "setup": "npm run install-all && npm run setup-env",
+    "setup-env": "cd backend && cp .env.example .env && cd ../frontend && cp .env.example .env"
+  },
+  "keywords": [
+    "task-manager",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb",
+    "jwt",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/taskflow.git"
+  }
+}
